@@ -1,14 +1,16 @@
 // src/components/Navigation.jsx
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
     <nav>
-      <NavLink to="/about">About Me</NavLink>
-      <NavLink to="/portfolio">Portfolio</NavLink>
-      <NavLink to="/contact">Contact</NavLink>
-      <NavLink to="/resume">Resume</NavLink>
+      <ul>
+        <li><Link to="/">About</Link></li>
+        <li><Link to="/portfolio">Portfolio</Link></li> {/* Add Portfolio link */}
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/resume">Resume</Link></li>
+      </ul>
     </nav>
   );
 }
