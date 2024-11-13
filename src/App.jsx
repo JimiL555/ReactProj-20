@@ -1,4 +1,4 @@
-// src/App.js
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} /> {/* Portfolio route */}
+        <Route path="/portfolio" element={<Portfolio />} /> {/* Route to Portfolio */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>

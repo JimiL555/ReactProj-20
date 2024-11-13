@@ -7,7 +7,7 @@ function Navigation() {
     <nav>
       <ul>
         <li><Link to="/">About</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li> {/* Add Portfolio link */}
+        <li><Link to="/portfolio">Portfolio</Link></li> {/* Link to Portfolio */}
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/resume">Resume</Link></li>
       </ul>
