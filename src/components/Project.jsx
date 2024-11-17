@@ -4,11 +4,16 @@ import React from 'react';
 function Project({ title, image, deployedLink, repoLink }) {
   return (
     <div className="project">
+      <img src={image} alt={title} />
       <h3>{title}</h3>
-      <img src={image} alt={`${title} screenshot`} />
       <p>
-        <a href={deployedLink} target="_blank" rel="noopener noreferrer">Live Site</a> | 
-        <a href={repoLink} target="_blank" rel="noopener noreferrer"> GitHub Repo</a>
+        <a href={deployedLink} target="_blank" rel="noopener noreferrer">
+          Deployed App
+        </a>{' '}
+        |{' '}
+        <a href={repoLink} target="_blank" rel="noopener noreferrer">
+          GitHub Repo
+        </a>
       </p>
     </div>
   );

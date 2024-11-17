@@ -55,3 +55,61 @@ body {
 .contact-form button:hover {
   background-color: #0056b3;
 }
+
+/* Portfolio Section */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  padding: 1em;
+}
+
+.project {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.project h3 {
+  margin: 0.5em 0;
+}
+
+.project p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project p a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Section */
+section h3 {
+  margin-top: 1em;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin: 0.5em 0;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+section ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}
